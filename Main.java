@@ -4,15 +4,23 @@ public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        // declare, allocate, and initialize constructor objects
-        constructor mybox1 = new constructor(10, 20, 15);//yahn hum ny constructor word ka object create kiya ha mybox1,mybox2
-        constructor mybox2 = new constructor(3, 6, 9);
+        returning_value  mybox1 = new returning_value();
+        returning_value mybox2 = new returning_value();
         double vol;
-        // get volume of first constructor
+        // assign values to mybox1's instance variables
+        mybox1.width = 10;
+        mybox1.height = 20;
+        mybox1.depth = 15;
+ /* assign different values to mybox2's
+ instance variables */
+        mybox2.width = 3;
+        mybox2.height = 6;
+        mybox2.depth = 9;
+        // get volume of first box
         vol = mybox1.volume();
         System.out.println("Volume is " + vol);
-        // get volume of second constructor
+        // get volume of second box
         vol = mybox2.volume();
         System.out.println("Volume is " + vol);
     }
-}
+    }
