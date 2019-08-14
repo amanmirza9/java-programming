@@ -3,24 +3,19 @@ package com.amanymous;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        returning_value  mybox1 = new returning_value();
-        returning_value mybox2 = new returning_value();
-        double vol;
-        // assign values to mybox1's instance variables
-        mybox1.width = 10;
-        mybox1.height = 20;
-        mybox1.depth = 15;
- /* assign different values to mybox2's
- instance variables */
-        mybox2.width = 3;
-        mybox2.height = 6;
-        mybox2.depth = 9;
-        // get volume of first box
-        vol = mybox1.volume();
-        System.out.println("Volume is " + vol);
-        // get volume of second box
-        vol = mybox2.volume();
-        System.out.println("Volume is " + vol);
+        mywork mystack1 = new mywork();
+        mywork mystack2 = new mywork();
+        // push some numbers onto the stack
+        for(int i=0; i<10; i++) mystack1.push(i);
+        for(int i=10; i<20; i++) mystack2.push(i);
+        // pop those numbers off the stack
+        System.out.println("Stack in mystack1:");
+        for(int i=0; i<10; i++)
+            System.out.println(mystack1.pop());
+        System.out.println("Stack in mystack2:");
+        for(int i=0; i<10; i++)
+            System.out.println(mystack2.pop());
     }
+
     }
+
